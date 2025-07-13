@@ -7,13 +7,11 @@ export default function App() {
   // console.log(android);
 
   return (
-    <View style={{ paddingTop: android ? 50 : 30 }}>
+    <View style={{ paddingTop: android ? 50 : 30, flex: 1 }}>
       <StatusBar style="auto" />
       <Homescreen />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {},
-});
+const styles = StyleSheet.create({});
