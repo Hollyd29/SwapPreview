@@ -3,10 +3,12 @@ import { DataProp } from "../types/data";
 function Homescreen() {
   const data: DataProp[] = [
     {
+      id: "1",
       title: "holly",
       img: require("../assets/images/IMG_5695.jpeg"),
     },
     {
+      id: "2",
       title: "design",
       img: require("../assets/images/design_your_app.png"),
     },
@@ -37,6 +39,7 @@ function Homescreen() {
             </View>
           );
         }}
+        keyExtractor={(each) => `${each.id}`}
       />
     </View>
   );
